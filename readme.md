@@ -1,5 +1,8 @@
 # Pothole Detection using Transfer Learning (MobileNetV2)
 
+Before anything create a python virtual env
+python3 -m venv venv
+
 ## Overview
 
 This project implements a binary image classification system to detect potholes in road images using deep learning.
@@ -33,7 +36,6 @@ pothole-detection/
 ├── utils.py
 ├── requirements.txt
 └── README.md
-
 
 ---
 
@@ -105,7 +107,6 @@ Example confusion matrix format:
 [[TN FP]
 [FN TP]]
 
-
 Where:
 
 - TN = True Negatives
@@ -122,17 +123,14 @@ Where:
 git clone <your-repo-url>
 cd pothole-detection
 
-
 ### 2. Create Virtual Environment
 
 python -m venv venv
 source venv/bin/activate
 
-
 ### 3. Install Dependencies
 
 pip install -r requirements.txt
-
 
 ---
 
@@ -142,7 +140,6 @@ Run:
 
 python train.py
 
-
 This will:
 
 - Train the model
@@ -151,7 +148,6 @@ This will:
 - Save model as:
 
 pothole_model.pth
-
 
 ---
 
@@ -163,12 +159,10 @@ Run:
 
 python inference.py image.jpg
 
-
 Output:
 
 Prediction: pothole
 Confidence: 0.93
-
 
 ---
 
@@ -183,7 +177,6 @@ Check MPS availability:
 
 import torch
 print(torch.backends.mps.is_available())
-
 
 ---
 
